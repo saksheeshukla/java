@@ -1,5 +1,6 @@
 package EXAM_JAVA;
 //USER-BUILD CUSTOM EXCEPTION
+/*
  class MycustomException extends Exception {
     public MycustomException(String message) {
         super(message);
@@ -19,10 +20,11 @@ public class unit2 {
         }
     }
 }
+*/
 
 
 //USE OF THROW
-import java.io.FileNotFoundException;
+/*import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Unit2 {
@@ -37,18 +39,19 @@ public class Unit2 {
             System.out.println("General I/O error: " + e.getMessage());
         }
     }
-}
+}*/
 
 
-import java.io.IOException;  //USE OF THROWS
+/*import java.io.IOException;  //USE OF THROWS
 public void readFile(String fileName) throws IOException{
 
-}
+}*/
 
 
 
 //INPUT STREAM CLASS OPERATIONS
 
+/*
 import java.io.FileInputStream;
 
 class unit2{
@@ -64,12 +67,13 @@ class unit2{
 
     }
 }
+*/
 
 
 
 
 //OUTPUT STREAM CLASS OPERATIONS
-import java.io.FileInputStream;
+/*import java.io.FileInputStream;
 import java.io.FileOutputStream;
 class unit2{
     public static void main(String[] args)  throws Exception{
@@ -82,10 +86,11 @@ class unit2{
         fout.close();
 
     }
-}
+}*/
 
 
 //FILE READER
+/*
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -101,10 +106,13 @@ public class unit2 {
         }
     }
 }
+*/
+
+
 
 
 //FILE WRITER
-import java.io.FileWriter;
+/*import java.io.FileWriter;
 import java.io.IOException;
 
 public class unit2 {
@@ -119,7 +127,7 @@ public class unit2 {
             e.printStackTrace();
         }
     }
-}
+}*/
 
 
 
@@ -127,7 +135,7 @@ public class unit2 {
 
 //FILE CLASS OPERAIION
 
-import java.io.File;
+/*import java.io.File;
 
 public class unit2 {
     public static void main(String[] args) throws Exception {
@@ -156,11 +164,14 @@ public class unit2 {
             System.out.println("failed");
         }
 
-    }
+    }*/
+
+
+
 
 //IMPLEMENT THREAD USING THREAD CLASS
 
-class MyThread extends Thread{
+/*class MyThread extends Thread{
     public void run(){
         for(int i=0; i<5; i++){
             System.out.println(i);
@@ -181,12 +192,13 @@ public class unit2 {
         thread.start();
 
     }
-}
+}*/
+
 
 
 
 //IMPLEMENTING THE RUNNABLE INTERFACE
-class MyRunnable implements Runnable{
+/*class MyRunnable implements Runnable{
     public void run(){
         for(int i=0; i<5; i++){
             System.out.println(i);
@@ -206,13 +218,15 @@ public class unit2{
         Thread thread=new Thread(runnable);
         thread.start();
     }
-}
+}*/
 
+
+
+//Ques1: Write a program to read text file and display the contents on monitor
+    /*
 import java.io.BufferedReader;
 
 import java.io.FileReader;
-
-//Ques1: Write a program to read text file and display the contents on monitor
 public class unit2{
     public static void main(String[] args) {
         FileReader fr=new FileReader("file.txt");
@@ -224,11 +238,11 @@ public class unit2{
         }
         fr.close();
     }
-}
+}*/
 
 
 //Ques 2: copy contents of 1 file into another(binary or text)
-import java.io.FileInputStream;
+/*import java.io.FileInputStream;
 import java.io.FileOutputStream;
 public class unit2{
     public static void main(String[] args) {
@@ -242,13 +256,13 @@ public class unit2{
         fin.close();
         fout.close();
     }
-}
+}*/
 
 
 
 
 //Ques:3 Append data in text file
-import java.io.FileWriter;
+/*import java.io.FileWriter;
 
 class unit2{
     public static void main(String[] args)  throws Exception{
@@ -257,10 +271,10 @@ class unit2{
         fout.write("line2");
         fout.close();
     }
-}
+}*/
 
 //Ques:4 write a program to read data from keyboard using bufferreader
-import java.io.BufferedReader;
+/*import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class unit2 {
@@ -275,10 +289,10 @@ public class unit2 {
         System.out.println(s2);
         System.out.println(s3);
     }
-}
+}*/
 
 //12. Write a Java program to read from and write to a file using byte streams.
-import java.io.FileInputStream;
+/*import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -300,19 +314,19 @@ public class unit2 {
             e.printStackTrace();
         }
     }
-}
+}*/
 
 
 
 
 
 //13. Provide a code example of reading from and writing to a file using FileReader and
-FileWriter.
-import java.io.FileReader;
+//FileWriter.
+/*import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
+import java.io.IOException;*/
 
-public class unit2 {
+/*public class unit2 {
     public static void main(String[] args) {
         try {
             FileReader fin = new FileReader("sourcefile.txt");
@@ -330,10 +344,11 @@ public class unit2 {
             e.printStackTrace();
         }
     }
+}*/
 
 
 //SYNCHRONIZATION IN JAVA
-class Counter {
+/*class Counter {
     private int count = 0;
 
      //Synchronized method to ensure that only one thread can increment at a time
@@ -372,12 +387,13 @@ class Counter {
         // Print the final value of the counter
         System.out.println("Final count: " + counter.getCount()); //  Expected: 2000
     }
-}
+}*/
 
 
 
 
 //INTER THREAD COMMUNICATION IN JAVA
+/*
 class Message {
     private String content;
     private boolean isEmpty = true;
@@ -427,4 +443,4 @@ public class unit2 {
         writer.start();
         reader.start();
     }
-}
+}*/

@@ -1,6 +1,6 @@
 package EXAM_JAVA;
 //how to create object or instance of a class
-class Car{
+/*class Car{
     String brands;
     String model;
     int year;
@@ -19,11 +19,11 @@ public class unit1{
         Car mycar=new Car("Toyoto","as",2022);
         mycar.displayinfo();
     }
-}
+}*/
 
 
 //USE OF THIS KEYWORD
-public class unit1{
+/*public class unit1{
     private int x;
     private int y;
 
@@ -41,11 +41,11 @@ public class unit1{
         System.out.println(point1.y);
         System.out.println(point2.y);
     }
-}
+}*/
 
 
 //SUPER
-class unit1{
+/*class unit1{
     public unit1(String name){
         System.out.println(name);
     }
@@ -59,12 +59,12 @@ class Dog extends unit1{
         super("Dog");
         System.out.println("Dog constructor");
     }
-}
+}*/
 
 
 //OVERLOADING
 // Class representing a box
-class box {
+/*class box {
     int x, y, z;  //Dimensions of the box
      Default constructor
     box() {
@@ -95,12 +95,12 @@ public class unit1{
         box b2 = new box(2, 5, 3);  //Create an instance of Box using the parameterized constructor
         b2.volume();//  Call the volume method to display the volume
     }
-}
+}*/
 
 
 //if we have defined function that is already in super class so this is knows as function overriding
 //OVERRIDING
-class A{
+/*class A{
     void f1(){
         System.out.println("A1");
     }
@@ -129,12 +129,12 @@ public class unit1{
         a.f2(); B1
         a.f3(); error
     }
-}
+}*/
 
 
 //INHERITANCE
  //Superclass (Parent Class)
-class Person {
+/*class Person {
     String name;  //Instance variable to hold the name of the person
 
    //  Method in the superclass
@@ -165,11 +165,11 @@ public class unit1 {
         s.f1();  //Calls the f1() method from the Person class
         s.f2();  //Calls the f2() method from the Students class
     }
-}
+}*/
 
 
 //ABSTRACT CLASSES
-abstract class Animal{
+/*abstract class Animal{
     abstract void makesound();
 }
 class Dog extends Animal{
@@ -178,13 +178,15 @@ class Dog extends Animal{
     }
 }
 
-class unit1{
+class unit1 {
     public static void main(String[] args) {
-        Dog d=new Dog();
+        Dog d = new Dog();
         d.makesound();
     }
+}*/
 
 //Abstract
+/*
 abstract class Shape {
     String color;
 
@@ -210,10 +212,11 @@ class Circle extends Shape {
     }
 }
 
+*/
 
 
 //DATA HIDING
-public class unit1{
+/*public class unit1{
     private String name;
     public String getName(){
         return name;
@@ -221,10 +224,11 @@ public class unit1{
     public void setName(String name){
         this.name=name;
     }
-}
+}*/
 
 
 //INTERFACES
+/*
 interface drawable{
     void draw();
 }
@@ -246,4 +250,88 @@ public  class unit1 {
         img.draw();
         img.resize(50);
     }
+}*/
+
+
+/*
+Write a Java program to create a Animal interface with a method called
+        bark() that takes no arguments and returns void. Create a Dog class that
+        implements Animal and overrides speak() to print "Dog is barking".
+*/
+
+/*// Define the Animal interface
+interface Animal {
+    void bark();  // Method with no arguments and returns void
 }
+
+// Implement the Animal interface in the Dog class
+class Dog implements Animal {
+    @Override
+    public void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+// Main class to test the Dog class
+public class AnimalTest {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.bark();  // Output: Dog is barking
+    }
+}*/
+
+
+/* Write a Java program to create a class Employee with a method called
+calculateSalary(). Create two subclasses Manager and Programmer. In each
+subclass, override the calculateSalary() method to calculate and return the salary
+based on their specific roles.*/
+
+/*// Define the Employee class with a method to calculate salary
+abstract class Employee {
+    abstract double calculateSalary();  // Abstract method for salary calculation
+}
+
+// Manager class extending Employee
+class Manager extends Employee {
+    private double baseSalary;
+    private double bonus;
+
+    // Constructor to initialize base salary and bonus
+    public Manager(double baseSalary, double bonus) {
+        this.baseSalary = baseSalary;
+        this.bonus = bonus;
+    }
+
+    @Override
+    double calculateSalary() {
+        return baseSalary + bonus;  // Salary is base salary plus bonus
+    }
+}
+
+// Programmer class extending Employee
+class Programmer extends Employee {
+    private double baseSalary;
+    private double overtimePay;
+
+    // Constructor to initialize base salary and overtime pay
+    public Programmer(double baseSalary, double overtimePay) {
+        this.baseSalary = baseSalary;
+        this.overtimePay = overtimePay;
+    }
+
+    @Override
+    double calculateSalary() {
+        return baseSalary + overtimePay;  // Salary is base salary plus overtime pay
+    }
+}
+
+// Main class to test the Manager and Programmer classes
+public class EmployeeTest {
+    public static void main(String[] args) {
+        Manager manager = new Manager(80000, 10000);
+        Programmer programmer = new Programmer(60000, 5000);
+
+        System.out.println("Manager's Salary: $" + manager.calculateSalary());  // Output: Manager's Salary: $90000.0
+        System.out.println("Programmer's Salary: $" + programmer.calculateSalary());  // Output: Programmer's Salary: $65000.0
+    }
+}*/
